@@ -110,9 +110,10 @@ public class BaseClass {
 	     */
 		public static void takeSnapShot(WebDriver webdriver,String Filename) throws Exception{
 
+			Date d=new Date();
+			String FileName = d.toString().replace(":", "_").replace(" ", "_") + ".png";
 			 File scr = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-			 Date d=new Date();
-		        File dest = new File("screenshot/" + Filename +d.toString().replace(":", "_")+".png");
+			   File dest = new File("screenshot/" + FileName);
 		        FileUtils.copyFile(scr, dest); 
 		     		}
 		}
