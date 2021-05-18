@@ -12,29 +12,29 @@
 	<test name="ChromeTest">
 		<parameter name="browser" value="chrome"/>
 		<classes>
-			<!--  <class name="com.opencart.testscripts.AccountCreationTestScript" />
+			<class name="com.opencart.testscripts.AccountCreationTestScript"/>
 			<class name="com.opencart.testscripts.OrderHistoryTestScript" />
 			<class name="com.opencart.testscripts.AddProductTestScript" />
 			<class name="com.opencart.testscripts.AddToCartTestScript" />
-			<class name="com.opencart.testscripts.CouponCodeTestScript" />-->
+			<class name="com.opencart.testscripts.CouponCodeTestScript" />
 			<class name="com.opencart.testscripts.FileUploadTestScript" />
-				<!-- <class name="com.opencart.testscripts.LoginPageTestScript" />
+			<class name="com.opencart.testscripts.LoginPageTestScript" />
 			<class name="com.opencart.testscripts.OrderPlacementTestScript" />
-			<class name="com.opencart.testscripts.WishListTestScript" />-->
+			<class name="com.opencart.testscripts.WishListTestScript" />
 		</classes>
 	</test>
 	<test name="FirefoxTest">
 		<parameter name="browser" value="firefox"/>
 		<classes>
-				<!-- <class name="com.opencart.testscripts.AccountCreationTestScript" />
+			<class name="com.opencart.testscripts.AccountCreationTestScript" />
 			<class name="com.opencart.testscripts.OrderHistoryTestScript" />
 			<class name="com.opencart.testscripts.AddProductTestScript" />
 			<class name="com.opencart.testscripts.AddToCartTestScript" />
-			<class name="com.opencart.testscripts.CouponCodeTestScript" />-->
+			<class name="com.opencart.testscripts.CouponCodeTestScript" />
 			<class name="com.opencart.testscripts.FileUploadTestScript" />
-				<!-- <class name="com.opencart.testscripts.LoginPageTestScript" />
+				<class name="com.opencart.testscripts.LoginPageTestScript" />
 			<class name="com.opencart.testscripts.OrderPlacementTestScript" />
-			<class name="com.opencart.testscripts.WishListTestScript" />-->
+			<class name="com.opencart.testscripts.WishListTestScript" />
 		</classes>
 	</test>
 
