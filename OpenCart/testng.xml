@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+	<!--   <suite name = "Parallel Testing Suite" parallel = "methods" thread-count= "2"> -->
+    <suite name = "Testing Suite">
+	<listeners>
+		<listener class-name="com.opencart.listeners.TestListener"/>
+	</listeners>
+
+
+	<test name="ChromeTest">
+		<parameter name="browser" value="chrome"/>
+		<classes>
+			<!--  <class name="com.opencart.testscripts.AccountCreationTestScript" />
+			<class name="com.opencart.testscripts.OrderHistoryTestScript" />
+			<class name="com.opencart.testscripts.AddProductTestScript" />
+			<class name="com.opencart.testscripts.AddToCartTestScript" />
+			<class name="com.opencart.testscripts.CouponCodeTestScript" />-->
+			<class name="com.opencart.testscripts.FileUploadTestScript" />
+				<!-- <class name="com.opencart.testscripts.LoginPageTestScript" />
+			<class name="com.opencart.testscripts.OrderPlacementTestScript" />
+			<class name="com.opencart.testscripts.WishListTestScript" />-->
+		</classes>
+	</test>
+	<test name="FirefoxTest">
+		<parameter name="browser" value="firefox"/>
+		<classes>
+				<!-- <class name="com.opencart.testscripts.AccountCreationTestScript" />
+			<class name="com.opencart.testscripts.OrderHistoryTestScript" />
+			<class name="com.opencart.testscripts.AddProductTestScript" />
+			<class name="com.opencart.testscripts.AddToCartTestScript" />
+			<class name="com.opencart.testscripts.CouponCodeTestScript" />-->
+			<class name="com.opencart.testscripts.FileUploadTestScript" />
+				<!-- <class name="com.opencart.testscripts.LoginPageTestScript" />
+			<class name="com.opencart.testscripts.OrderPlacementTestScript" />
+			<class name="com.opencart.testscripts.WishListTestScript" />-->
+		</classes>
+	</test>
+
+</suite> 

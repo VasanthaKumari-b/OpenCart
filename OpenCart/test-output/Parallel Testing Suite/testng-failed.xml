@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [Parallel Testing Suite]" parallel="methods">
+  <parameter name="browsertype" value="firefox"/>
+  <listeners>
+    <listener class-name="com.opencart.listeners.TestListener"/>
+  </listeners>
+  <test name="ChromeTest(failed)" parallel="methods">
+    <parameter name="browsertype" value="chrome"/>
+    <classes>
+      <class name="com.opencart.testscripts.FileUploadTestScript">
+        <methods>
+          <include name="uploadFile"/>
+          <include name="aftermethod"/>
+          <include name="beforemethod"/>
+          <include name="beforemethod"/>
+        </methods>
+      </class> <!-- com.opencart.testscripts.FileUploadTestScript -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test name="FirefoxTest(failed)" parallel="methods">
+    <parameter name="browsertype" value="firefox"/>
+    <classes>
+      <class name="com.opencart.testscripts.FileUploadTestScript">
+        <methods>
+          <include name="uploadFile"/>
+          <include name="aftermethod"/>
+          <include name="beforemethod"/>
+          <include name="beforemethod"/>
+        </methods>
+      </class> <!-- com.opencart.testscripts.FileUploadTestScript -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [Parallel Testing Suite] -->
